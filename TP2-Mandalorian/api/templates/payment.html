@@ -1,0 +1,18 @@
+{%  include 'header.html' %}
+
+    {%  include 'navbar.html' %}
+<div class="container">
+    <div class="row">
+        <div class="card payment">
+            <div class="card-body payment">
+              {{ capitulo }}
+            </div>
+            <p class="card-text" id="price" value="800">Precio: $800</p>
+
+            <button class="btn btn-success payment" onclick="document.location.href='/mandalorian/chapters/payment/{{number}}/'+document.getElementById('price').getAttribute('value')" id="btn-pagar{{ number }}">Pagar</button>
+            <button class="btn btn-danger payment" onclick="document.location.href='/mandalorian/chapters'" id="btn-cancelar{{ number }}">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+{%  include 'footer.html' %}

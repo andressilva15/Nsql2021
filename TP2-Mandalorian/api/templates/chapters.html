@@ -1,0 +1,30 @@
+{%  include 'header.html' %}
+
+
+    {% include 'navbar.html' %}
+    <div id="root">
+        <div class="container">
+            <div class="row">
+                <h1 class="serie-title">El Mandalorian </h1> <a style="color:white;" ></a> 
+                <button type="button" class="btn btn-info" onclick="document.location.reload();">Refresh</button>
+            </div>
+            <div class="row">
+                {% for capitulo in capitulos %}
+                    <div class="card chapter">
+                        <div class="card-body" id="chapter{{ loop.index }}">
+                            {{capitulo}}
+                            <p id="state{{ loop.index }}" class="card-text" value="{{estados[loop.index -1]}}">
+                                {{estados[loop.index -1]}}
+                            </p>
+                        </div>
+                        <button class="btn btn-success" onclick="document.location.href='/mandalorian/chapters/payment/{{ loop.index }}'" id="btn-alquilar{{ loop.index }}">Alquilar</button>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <script src="/static/js/functions.js"></script>
+
+{%  include 'footer.html' %}

@@ -1,0 +1,79 @@
+body{
+    background-image: url('https://www.gratistodo.com/wp-content/uploads/2020/02/The-Mandalorian-Wallpapers-12.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card.chapter{
+    margin: 1rem;
+    width:30rem;
+    height: 5rem;
+    left: 4rem;
+}
+
+.card-body{
+    width: 20rem;
+    margin-top:5px;
+    text-align: left;
+}
+
+.card.payment{
+    margin-left:25%;
+    margin-top:5%;
+    width:50%;
+}
+
+.card-body.payment{
+    width:120%;
+    height: 20%;
+}
+
+.card-text{
+    margin-left: 1.3rem;
+}
+
+.serie-title{
+    margin: 0.3rem 25rem;
+    font-size: 2.5rem;
+}
+
+.btn.btn-info{
+    margin:1rem 47rem;
+    position: absolute;
+}
+@media all and (max-width:30em){
+    a.btn.btn-info{
+        display:block;
+        margin:0.4em auto;
+    }
+} 
+
+.btn.btn-success.payment{
+    position: absolute;
+    right:18%;
+    top:23%;
+}
+
+.btn.btn-danger.payment{
+    position:absolute;
+    right: 1%;
+    top:23%;
+}
+.btn.btn-success{
+    position: absolute;
+    right: 2%;
+    top: 23%;
+    color: white;
+}
+
+.p-state{
+    position: absolute;
+    right: 33%;
+    top:35%;
+}
+
+.serie-title{
+    text-align: center;
+}

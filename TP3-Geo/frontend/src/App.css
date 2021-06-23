@@ -1,0 +1,31 @@
+body{
+    /*background-image: url('./assets/background-image.jpg');*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #070707;
+}
+
+.form-container{
+    margin-left: 40%;
+}
+
+.add-form{
+    background-color: white;
+    margin-top: 10rem;
+    border-radius: 5px;
+    width: 300px;
+    position:center;
+}
+
+.form-group{
+    margin:5px 0 5px 10px;
+    width:90%;
+}
+
+.form-control.select{
+    width:90%;
+    position:center;
+    margin:5px 0 5px 10px;
+}
